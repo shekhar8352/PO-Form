@@ -41,30 +41,6 @@ const PODataTable = ({
 
   return (
     <div className="table-container">
-      <Box
-        className="table-header"
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        mb={1}
-      >
-        <Typography variant="h6" gutterBottom>
-          PO Line Items (Editable)
-        </Typography>
-        <Button
-          variant="outlined"
-          startIcon={<AddIcon />}
-          onClick={handleAddRow}
-          sx={{
-            borderRadius: 2,
-            fontWeight: "bold",
-            textTransform: "none",
-            color: "#002c77",
-          }}
-        >
-          Add Line
-        </Button>
-      </Box>
 
       <TableContainer component={Paper} elevation={3} sx={{ mb: 3 }}>
         <Table sx={{ minWidth: 650 }} size="large">
@@ -138,27 +114,18 @@ const PODataTable = ({
       </TableContainer>
 
       <Button
-        variant="contained"
-        color="primary"
-        backgroundColor="#002c77"
-        onClick={handleTableSubmit}
-        sx={{
-          mt: 2,
-          px: 4,
-          py: 1,
-          fontWeight: "bold",
-          textTransform: "none",
-          borderRadius: 2,
-          boxShadow: 2,
-          backgroundColor: "#002c77",
-          color: "#ffffff",
-          "&:hover": {
-            backgroundColor: "#001f5a",
-          },
-        }}
-      >
-        Submit Changes
-      </Button>
+          variant="outlined"
+          startIcon={<AddIcon />}
+          onClick={handleAddRow}
+          sx={{
+            borderRadius: 2,
+            fontWeight: "bold",
+            textTransform: "none",
+            color: "#002c77",
+          }}
+        >
+          Add Line
+        </Button>
     </div>
   );
 };
