@@ -107,12 +107,24 @@ const FormBody = () => {
       </Typography>
 
       <Stepper activeStep={activeStep} sx={{ mb: 4, mt: 2 }}>
-        {steps.map((label) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+  {steps.map((label, index) => (
+    <Step key={label}>
+      <StepLabel
+        sx={{
+          "& .MuiStepIcon-root": {
+            color: index <= activeStep ? "#002c77" : "#ccc", // background circle color
+          },
+          "& .MuiStepIcon-text": {
+            fill: "#fff", // number color
+          },
+        }}
+      >
+        {label}
+      </StepLabel>
+    </Step>
+  ))}
+</Stepper>
+
 
       <Paper
         elevation={3}
