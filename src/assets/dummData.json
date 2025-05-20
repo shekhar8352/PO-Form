@@ -1,0 +1,218 @@
+{
+  "10000000001": [
+    {
+      "item description": "MacBook Pro 16-inch, M2 Max chip, 64GB RAM, 2TB SSD, with AppleCare+ for Business Essentials (Extended Warranty for 3 years)",
+      "Item No": "MBP016",
+      "OTY": 3,
+      "UOM": "PCS",
+      "Curr": "USD",
+      "Price": 2400.00,
+      "Line Total": 7200.00,
+      "Category code": "ELEC",
+      "Emtity": "Global Tech",
+      "Resp centre/ Cose centre": "IT-GEN",
+      "Project Source": "Capital",
+      "Project Code": "CAP-2024-01"
+    },
+    {
+      "item description": "Thunderbolt 4 Docking Station - Ultra High Speed Multi-Port Hub with DisplayPort, Ethernet, HDMI, USB-C, USB-A, SD Reader and 100W Power Delivery for Professional Video Editing",
+      "Item No": "DOCK-TB4",
+      "OTY": 10,
+      "UOM": "UNIT",
+      "Curr": "USD",
+      "Price": 399.99,
+      "Line Total": 3999.90,
+      "Category code": "PERIPH",
+      "Emtity": "Global Tech R&D & Integration Division – North America",
+      "Resp centre/ Cose centre": "R&D-NA-USA-1234567890-EXTRALONG",
+      "Project Source": "Infrastructure+Upgrades",
+      "Project Code": "INF-UPGRD-2024-RD"
+    }
+  ],
+  "10000000002": [
+    {
+      "item description": "Whiteboards - Wall Mountable (96\" x 48\") Magnetic with Grid Lines",
+      "Item No": "WB001",
+      "OTY": 10,
+      "UOM": "PCS",
+      "Curr": "EUR",
+      "Price": 75.50,
+      "Line Total": 755.00,
+      "Category code": "OFF-SUP",
+      "Emtity": "HQ",
+      "Resp centre/ Cose centre": "ADMIN-01",
+      "Project Source": "Internal",
+      "Project Code": "PRJ-2023-ADMIN"
+    },
+    {
+      "item description": "Office Chairs - Ergonomic Design, Adjustable Lumbar Support, Breathable Mesh",
+      "Item No": "",
+      "OTY": 0,
+      "UOM": "PCS",
+      "Curr": "",
+      "Price": 0,
+      "Line Total": 0,
+      "Category code": "",
+      "Emtity": "",
+      "Resp centre/ Cose centre": "",
+      "Project Source": "",
+      "Project Code": ""
+    }
+  ],
+  "10000000003": [
+    {
+      "item description": "",
+      "Item No": "MON002",
+      "OTY": 0,
+      "UOM": "PCS",
+      "Curr": "USD",
+      "Price": 190.00,
+      "Line Total": 0.00,
+      "Category code": "ELEC",
+      "Emtity": "",
+      "Resp centre/ Cose centre": "",
+      "Project Source": "",
+      "Project Code": ""
+    },
+    {
+      "item description": "Ultra-Wide Curved Monitor (49-inch, 5120x1440) – Ideal for Multi-Tasking Professionals, Traders, and Developers",
+      "Item No": "ULTRAWIDE49",
+      "OTY": 2,
+      "UOM": "PCS",
+      "Curr": "JPY",
+      "Price": 120000,
+      "Line Total": 240000,
+      "Category code": "ELEC-DISPLAY",
+      "Emtity": "Asia-Pacific Division",
+      "Resp centre/ Cose centre": "DEV-JPN",
+      "Project Source": "Dev Expansion - Q3",
+      "Project Code": "DEV-EXP-03"
+    }
+  ],
+  "10000000004": [
+    {
+      "item description": "Standing Desks - Electric Adjustable, Dual Motor, Memory Settings (Very long product title to simulate overflow and broken UI rendering inside table cells)",
+      "Item No": "DSK789",
+      "OTY": 7,
+      "UOM": "PCS",
+      "Curr": "INR",
+      "Price": 12000,
+      "Line Total": 84000,
+      "Category code": "FURN",
+      "Emtity": "India Office",
+      "Resp centre/ Cose centre": "FAC-IND",
+      "Project Source": "Renovation",
+      "Project Code": "REN-IND-2024"
+    },
+    {
+      "item description": null,
+      "Item No": "EXT-CORD-100M",
+      "OTY": 100,
+      "UOM": "MTR",
+      "Curr": "INR",
+      "Price": 50,
+      "Line Total": 5000,
+      "Category code": "ELEC-MISC",
+      "Emtity": "Infra Ops – Bengaluru (A very long entity name to test overflow)",
+      "Resp centre/ Cose centre": null,
+      "Project Source": "Facility Expansion",
+      "Project Code": ""
+    }
+  ],
+  "10000000005": [
+    {
+      "item description": "VPN License Renewal for All Regions Including Advanced Threat Protection – North America, EMEA, APAC",
+      "Item No": "",
+      "OTY": 1,
+      "UOM": "YR",
+      "Curr": "USD",
+      "Price": 4500,
+      "Line Total": 4500,
+      "Category code": "IT-SFT",
+      "Emtity": "Security",
+      "Resp centre/ Cose centre": "SEC-OPS",
+      "Project Source": "OPEX",
+      "Project Code": ""
+    }
+  ],
+  "10000000006": [
+    {
+      "item description": "Cloud Storage - 100TB with Advanced Backup, Disaster Recovery, Geo-Redundancy, S3 + Glacier with API",
+      "Item No": "CLD100",
+      "OTY": 1,
+      "UOM": "YR",
+      "Curr": "",
+      "Price": 12000,
+      "Line Total": 12000,
+      "Category code": "SVC",
+      "Emtity": "Infrastructure",
+      "Resp centre/ Cose centre": "CLOUD-OPS",
+      "Project Source": "Infrastructure Budget",
+      "Project Code": "CLOUD-2024"
+    }
+  ],
+  "10000000007": [
+    {
+      "item description": "Server Maintenance Kit - Including Fan Modules, Power Supply, Rack Rails, Firmware Update Tool",
+      "Item No": "SRV-MNT",
+      "OTY": 2,
+      "UOM": "SET",
+      "Curr": "USD",
+      "Price": 899.99,
+      "Line Total": 1799.98,
+      "Category code": "HW-MNT",
+      "Emtity": null,
+      "Resp centre/ Cose centre": "SRV-ENG",
+      "Project Source": null,
+      "Project Code": "MAINT-001"
+    }
+  ],
+  "10000000008": [
+    {
+      "item description": "Employee Welcome Kits: Notebook, Pen, Mug, T-shirt, Backpack – Branded",
+      "Item No": "HR-WLC-01",
+      "OTY": 25,
+      "UOM": "KIT",
+      "Curr": "USD",
+      "Price": 45.00,
+      "Line Total": 1125.00,
+      "Category code": "HR-SUP",
+      "Emtity": "HR Dept",
+      "Resp centre/ Cose centre": "HR-001",
+      "Project Source": "HR Budget",
+      "Project Code": ""
+    }
+  ],
+  "10000000009": [
+    {
+      "item description": "Printer Ink Cartridges - Color, High Yield (Cyan, Magenta, Yellow, Black)",
+      "Item No": "INK-123",
+      "OTY": 15,
+      "UOM": "BOX",
+      "Curr": "GBP",
+      "Price": 35.20,
+      "Line Total": 528.00,
+      "Category code": "OFF-PRINT",
+      "Emtity": "UK Ops",
+      "Resp centre/ Cose centre": "",
+      "Project Source": "Ops Supply",
+      "Project Code": "OPS-UK-2024"
+    }
+  ],
+  "10000000010": [
+    {
+      "item description": "Temporary Staffing for Q2: Data Entry Operators, Admin Assistants, Facilities Team (2-month Contract)",
+      "Item No": "TEMP-SVC",
+      "OTY": 2,
+      "UOM": "MNTH",
+      "Curr": "USD",
+      "Price": 3000,
+      "Line Total": 6000,
+      "Category code": "TEMP-STF",
+      "Emtity": "Contractor",
+      "Resp centre/ Cose centre": "HR-CON",
+      "Project Source": "",
+      "Project Code": ""
+    }
+  ]
+}

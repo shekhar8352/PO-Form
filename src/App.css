@@ -1,0 +1,68 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #002c77; /* Light background color */
+  color: aliceblue;
+  border-bottom: 1px solid #dee2e6; /* Bottom border */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.user-icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it circular */
+  margin-right: 10px; /* Space between icon and name */
+}
+
+
+
+.header-center {
+  flex-grow: 1; /* Center the title */
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.header-center h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5em; /* Adjust font size as needed */
+}
+
+.header-right h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.2em; /* Adjust font size as needed */
+}
+
+.form-items {
+  padding: 10px 0px;
+}
+
+.form-header{
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.table-header{
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-body{
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
