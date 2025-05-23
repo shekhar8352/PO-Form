@@ -73,10 +73,6 @@ const PODataTable = ({
 
   return (
     <Box>
-      <Typography variant="h6" sx={{ mb: 2 }}>
-        PO Data Table
-      </Typography>
-
       <TableContainer component={Paper} elevation={2} sx={{ mb: 3 }}>
         <Table size="small">
           <TableHead sx={{ backgroundColor: "#f5f5f5" }}>

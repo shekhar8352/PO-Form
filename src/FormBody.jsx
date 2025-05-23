@@ -5,6 +5,7 @@ import {
   Stepper,
   Step,
   StepLabel,
+  StepContent,
   Button,
   Grid,
   Box,
@@ -85,6 +86,7 @@ const FormBody = () => {
   };
 
   const handleBack = () => setActiveStep((prev) => prev - 1);
+
   const handleReset = () => {
     setFormData({ approvalOption: "Yes", poNumber: "", message: "" });
     setMatchedData([]);
@@ -99,109 +101,102 @@ const FormBody = () => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ mt: 5 }}>
+    <Container maxWidth="md" sx={{ mt: 5 }}>
       <Typography variant="h5" gutterBottom>
         {activeStep > 0
           ? `Change Order Form ${formData.poNumber}`
           : "Change Order Form (Amendment to Existing PO)"}
       </Typography>
 
-      <Stepper activeStep={activeStep} sx={{ mb: 4, mt: 2 }}>
-  {steps.map((label, index) => (
-    <Step key={label}>
-      <StepLabel
-        sx={{
-          "& .MuiStepIcon-root": {
-            color: index <= activeStep ? "#002c77" : "#ccc", // background circle color
-          },
-          "& .MuiStepIcon-text": {
-            fill: "#fff", // number color
-          },
-        }}
+      <Stepper
+        activeStep={activeStep}
+        orientation="vertical"
+        sx={{ mb: 4, mt: 2 }}
       >
-        {label}
-      </StepLabel>
-    </Step>
-  ))}
-</Stepper>
-
-
-      <Paper
-        elevation={3}
-        sx={{
-          width: "90%",
-          margin: "0 auto",
-          p: 3,
-          mb: 4,
-          boxSizing: "border-box",
-          // maxWidth: "1200px",
-          minHeight: "400px",
-        }}
-      >
-        {activeStep === 0 && (
-          <Form
-            formData={formData}
-            errors={errors}
-            handleChange={handleChange}
-            handleSubmit={(e) => {
-              e.preventDefault();
-              handleNext();
-            }}
-          />
-        )}
-
-        {activeStep === 1 && (
-          <PODataTable
-            data={matchedData}
-            handleTableChange={handleTableChange}
-            handleTableSubmit={() => handleNext()}
-            setMatchedData={setMatchedData}
-          />
-        )}
-
-        {activeStep === 2 && (
-          <Grid container spacing={2}>
-            <Calculate
-              data={matchedData}
-              formData={formData}
-              handleChange={handleChange}
-              handleSubmit={(e) => {
-                e.preventDefault();
-                handleNext();
+        {steps.map((label, index) => (
+          <Step key={label}>
+            <StepLabel
+              sx={{
+                "& .MuiStepIcon-root": {
+                  color: index <= activeStep ? "#002c77" : "#ccc",
+                },
+                "& .MuiStepIcon-text": {
+                  fill: "#fff",
+                },
               }}
-            />
-          </Grid>
-        )}
-      </Paper>
-      <Box sx={{ mt: 3, mb: 2 }}>
-        {activeStep > 0 && (
-          <Button onClick={handleBack} sx={{ mr: 2 }}>
-            Back
-          </Button>
-        )}
-        {activeStep < steps.length - 1 ? (
-          <Button
-            variant="contained"
-            onClick={handleNext}
-            sx={{ backgroundColor: "#002c77", color: "white" }}
-          >
-            {activeStep === 1 ? "Save and Continue" : "Continue"}
-          </Button>
-        ) : (
-          <Button
-            variant="contained"
-            onClick={handleNext}
-            sx={{ backgroundColor: "#002c77", color: "white" }}
-          >
-            Submit
-          </Button>
-        )}
-        {activeStep === steps.length - 1 && (
-          <Button onClick={handleReset} sx={{ ml: 2 }}>
-            Reset
-          </Button>
-        )}
-      </Box>
+            >
+              {label}
+            </StepLabel>
+            <StepContent>
+              {/* <Paper
+                elevation={3}
+                sx={{
+                  width: "95%",
+                  margin: "0 auto",
+                  p: 3,
+                  mb: 2,
+                }}
+              > */}
+                {index === 0 && (
+                  <Form
+                    formData={formData}
+                    errors={errors}
+                    handleChange={handleChange}
+                    handleSubmit={(e) => {
+                      e.preventDefault();
+                      handleNext();
+                    }}
+                  />
+                )}
+
+                {index === 1 && (
+                  <PODataTable
+                    data={matchedData}
+                    handleTableChange={handleTableChange}
+                    handleTableSubmit={() => handleNext()}
+                    setMatchedData={setMatchedData}
+                  />
+                )}
+
+                {index === 2 && (
+                  <Grid container spacing={2}>
+                    <Calculate
+                      data={matchedData}
+                      formData={formData}
+                      handleChange={handleChange}
+                      handleSubmit={(e) => {
+                        e.preventDefault();
+                        handleNext();
+                      }}
+                    />
+                  </Grid>
+                )}
+              {/* </Paper> */}
+
+              <Box sx={{ mt: 1 }}>
+                {index > 0 && (
+                  <Button onClick={handleBack} sx={{ mr: 1 }}>
+                    Back
+                  </Button>
+                )}
+                <Button
+                  variant="contained"
+                  onClick={handleNext}
+                  sx={{ backgroundColor: "#002c77", color: "white" }}
+                >
+                  {index === steps.length - 1 ? "Submit" : "Continue"}
+                </Button>
+                {index === steps.length - 1 && (
+                  <Button onClick={handleReset} sx={{ ml: 2 }}>
+                    Reset
+                  </Button>
+                )}
+              </Box>
+            </StepContent>
+          </Step>
+        ))}
+      </Stepper>
+
       <Snackbar
         open={snackbarOpen}
         autoHideDuration={2000}
